@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelle HTML</title>
+    <style>
+        .batman{
+            background-color: aqua;
+        }
+        .flas{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>hyper</h1>
+    
+    <ul>
+    <li><a href="index01.html">sezione ancora</a></li>
+    <span>Tabelle</span>
+    </ul>
+
+    <h2>Tabelle</h2> 
+
+<table>
+    <caption>L'html nel tempo</caption>
+    <thead>
+    <tr>
+        <th>version</th>
+        <th>Anno</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td scope="col">HTML</td>
+        <td scope="col">1991</td>
+        
+    </tr>
+    <tr>
+        <td>HTML2.0</td>
+        <td>1995</td>
+        
+    </tr>
+    <tr>
+        <td>HTML3.2</td>
+        <td>1997</td>
+        
+    </tr>
+    <tr>
+        <td>HTML</td>
+        <td>1999</td>
+        
+    </tr>
+    <tr>
+        <td>HTML 5.0</td>
+        <td>2014</td>
+        
+    </tr>
+    <tr>
+        <td>HTML 5.0</td>
+        <td>2014</td>
+        
+    </tr>
+</tbody>
+</table>
+
+<h3>Tabelle con molte intestazioni</h3>
+<table>
+    <caption>Grandi campioni</caption>
+    <tr>
+        <th>players</th>
+        <th>presenze</th>
+        <th>Goal</th>
+    </tr>
+     <tr>
+        <td scope="row">Messi</td>
+        <td>914</td>
+        <td>723</td>
+    </tr>
+     <tr>
+        <td scope="row">CR7</td>
+        <td>1023</td>
+        <td>748</td>
+    </tr>
+     <tr>
+        <td scope="row">Maradonna</td>
+        <td>520</td>
+        <td>723</td>
+    </tr>
+</table>
+
+<!-- &lt;cologroup&gt; per avere <colgroupe> sul browser-->
+
+<h3>uso di<code> &lt;cologroup&gt;</code></h3>
+
+<table>
+    <caption>Spereori e loro aiutanti</caption>
+    <colgroup>
+    <col>
+    <col span="2" class="batman">
+    <col span="2" class="flash">
+    </colgroup>
+    <tr>
+        <th scope="col">batman</th>
+        <th scope="col">robin</th>
+        <th scope="col">flash</th>
+        <th scope="col">kid flash</th>
+    </tr>
+    <tr>
+        <td scope="row"></td>
+        <td>inteligenza</td>
+        <td>agillità</td>
+        <td>super velocita</td>
+        <td></td>
+    </tr>
+</table>
+
+<!--per wrappare ctrl+shift+p + scrivere wrapp et il codice dove wrappare tipo <code>-->
+<h3>>Uso degli attributi <code>rowspan</code> e <code>colspan</code></h3>
+
+<table>
+    <!--table>caption{articoli venduti nel 2013+tr*6>td*6{testo}-->
+
+    <caption>articoli venduti nel 2013</caption>
+    <tr>
+        <td rowspan="2" colspan="2"></td>
+       
+        <th colspan="2" scope="colgroup">vestiti</th>
+        <th colspan="2" scope="colgroup">accessori</th>
+       
+    </tr>
+    <tr>
+        <th scope="col">pantaloni</th>
+        <th scope="col">Gomme</th>
+        <th scope="col">Bracciali</th>
+        <th scope="col">Anelli</th>
+    </tr>
+    <tr>
+        <th rowspan="2" scope="rowgroup">Torino</th>
+        <th scope="row">roma</th>
+        <td>56</td>
+        <td>22</td>
+        <td>72</td>
+        <td>23</td>
+    </tr>
+    <tr>
+        <th scope="row">vittorio</th>
+        <td>46</td>
+        <td>18</td>
+        <td>61</td>
+        <td>15</td>
+    </tr>
+    <tr>
+        <th rowspan="2" scope="rowgroup">Milano</th>
+        <th scope="row">Duomo</th>
+        <td>89</td>
+        <td>34</td>
+        <td>85</td>
+        <td>38</td>
+    </tr>
+    <tr>
+        <th scope="row">Navigli</th>
+        <td>80</td>
+        <td>12</td>
+        <td>36</td>
+        <td>19</td>
+    </tr>
+    
+</table>
+
+</body>
+</html>
