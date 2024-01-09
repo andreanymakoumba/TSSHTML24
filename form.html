@@ -8,15 +8,18 @@
 <body>
     <h1>Form HTML</h1>
     <ul>
-        <li><a href="liste.html">liste</a></li>
-        <li><a href="tabelle.html">Tabelle</a></li>
-        <li><a href="liste.html">liste</a></li>
+        <li><a href="./liste.html">liste</a></li>
+        <li><a href="./tabelle.html">Tabelle</a></li>
+        <li><a href="./index01.html">index01</a></li>
+        <li><a href="./iframe.html"></a></li>
+        <li><span>form</span></li>
     </ul>
+
     <h2>Form di autenticazione</h2>
-    <form action="" method="">
-        <label for="User">User</label>
+    <form action="" method="post">
+        <label for="User">User</label><br>
         <input type="text" name="User" id="User"><br>
-        <label for="password">password</label>
+        <label for="password">password</label><br>
         <input type="password" name="password" id="password"><br>
         <!--<input type="submit" value="login">-->
 
@@ -25,22 +28,65 @@
     </form>
 
 <!-- Form di registrazine-->
-    <h2>Form di registrazione</h2>
+<h2>Form di registrazione</h2>
+<p>I campi contrasegnati con * sono obbligatori</p>
 
-<form action="">
-    <label for="nome">Nome</label>
-        <input type="text" name="Nome" id="Nome"><br>
-<label for="cognome">Cognome</label><br>
-<input type="text" name="cognome" id=""><br>
+<!--flieldset per ragruppare tanti elementi per generi ed ha un tag di apertura e di chiusura -->
+<!--legend per dare una legenda ad una parte del gruppo ha un tag di apertura e di chiusura-->
+
+<form action="handler.php" method="post"  enctype="multipart/form-data">
+    <label for="nome">Nome*</label><br>
+    <!--disabled per disattivare il compo del nome-->
+    <!--readonly value per leggere e non fare nient'altro-->
+        <input type="text" name="Nome" id="Nome" value="Mario" disabled><br>
+    <label for="cognome">Cognome</label><br>
+        <input type="text" name="cognome" id="cognome" readonly value="Vecchione"><br>
+
+<!--input nascosto all'utente per nascondere i dati all'utenete -->
+        <input type="hidden" name="iduser" value="123">
+
+
+
 <label for=""><input type="radio" name="genere" id="maschio">M</label>
 <label for=""><input type="radio" name="genere" id="femina">F</label>
 <label for=""><input type="radio" name="genere" id="homo">homo</label><br>
 <label for="birthday">Data di nascita</label><br>
 <input type="date" name="birthday" id="birthday"><br>
 
+<!--input di tipo numerico-->
+<label for="">inserisci la tua età</label><br>
+<input type="number" name="age" id="age" min="18" max="30"place><br>
+
+<label for="">Ora</label><br>
+<input type="time" name="ora" id="ora"><br>
+
+<!--input per selezionare qualcosa o città-->
+<label for="veicoli">veicoli</label>
+<select name="veicoli" id="veicoli" multiple size="">
+    <option value="">scegli veicoli</option>
+
+    <optgroup label="fiat">
+        <option value="torino">punto</option><br>
+        <option value="Roma">panda</option><br>
+    </optgroup>
+    <optgroup label="BMW">
+
+        <option value="Milano">M3</option><br>
+        <option value="Venezia">X6</option><br>
+    </optgroup>
+</select>
+
+<!--per selezionare veicoli-->
+
+
 <p>Liguaggi conosciuti</p>
 <!--per selezionare piu elementi-->
-<label for="java"><input type="checkbox" name="linguaggio" id="linguaggio">Java</label><br>
+<label for="java"><input type="checkbox" name="linguaggio" id="linguaggio">Java</label>
+
+<!--input per avere un range da 0 a 100-->
+<label for="level"></label>
+<input type="range" name="" id=""><br>
+
 <label for="php"><input type="checkbox" name="linguaggio" id="linguaggio">PHP</label><br>
 <label for="pyton"><input type="checkbox" name="linguaggio" id="linguaggio">Phyton</label><br>
 
@@ -50,18 +96,29 @@
 
 <!--per registare un sito-->
 <label for="sto internet">Sito web</label><br>
-<input type="url" name="url" id="url"><br>
+<input type="url" name="url" id="url"><br></optgroup>
 
 <!--per allegare un pdf-->
 <label for="cv">Cv in formato PDF</label><br>
-<input type="file" name="cv" id="cv"><br>
+
+<!--accept/* per tutti i tipi di immagine o per specificare accept/jpeg..etc-->
+<input type="file" name="cv" id="cv" accept="image/*" accept="application/pdf"><br>
 <input type="reset" value="Reset">
 
-<button type="submit">Registrati</button>
+<button type="submit">Registrati</button><br>
+
+<label for="message"> lascia un messaggio</label><br>
+<textarea name="submit" id="message" cols="30" rows="10"></textarea><br>
 
 
 </form>
 
+<h2>Form di ricerca</h2>
+<form action="">
+    <label for="cerca">inserisci il termine da cercare</label><br>
+    <input type="search" name="" id=""><br>
+    <button type="submit">Cerca</button>
+</form>
 
 </body>
 
