@@ -1,0 +1,104 @@
+/* seletore di elementi */
+
+h1 {
+    color: red;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+    padding: 0 1rem;
+}
+body{
+    background-color: lightgray;
+    margin: 0;
+    
+}
+#my_paragraph{
+    color: green;
+    width: 300px;
+    padding: 8px;
+    
+    margin: 8px;
+    border: 1px solid;
+
+
+}
+p {
+    color: green;
+}
+
+h1, h2, p {
+    color: red;
+    
+}
+/* seletore di ID */
+#myh3{
+    color: aqua;
+}
+/* seletore di Classe */
+.text{
+    color:blue
+}
+/* seletore di attributti */
+
+a[target]{
+    color:darkgreen
+}
+a[href="https://mdn.org"]{
+    color: black;
+}
+
+/* selettori di pseudo classi in questo ordine preciso sempre */
+a:link{
+color: #222;
+}
+a:visited{
+color: darkgray;
+}
+a:hover{
+color: darkred;
+}
+a:active{
+color: darkorange;
+}
+
+/* formatazione liste  */
+
+li:first-child{
+    color: aqua;
+}
+li:last-child{
+    color: blue;
+}
+
+/* formatazione tabelle 
+quando n è 0 allara 2*0+1= 1 e ripete cosi*/
+
+tbody tr:nth-child(2n + 1){
+background-color: lightgray; 
+}
+
+/* formatazione Form */
+input:focus{
+    background-color: lightblue;
+}
+
+/* :: per pseudo elemento */
+/* il valore di default è sempre 16px */
+p::first-letter{
+    font-size: 32px;
+}
+
+input::placeholder{
+    color: cadetblue;
+}
+
+/* combinatori di selettori */
+/* + */
+
+h2 + p {
+    font-size: 24px;
+}
+h3 ~ p {
+    font-size: 24px;
+}

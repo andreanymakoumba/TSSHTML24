@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lezione css</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    <!-- ctr shift p + wrap + nome che wrappa tipo .container -->
+    <div class="container">
+        <h1>Lorem ipsum dolor sit amet con</h1>
+        <h2>buongiorno</h2>
+        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis.</p>
+        <a target="_blank" href="https://mdn.org">MDN</a><br>
+        <a target="_blank" href="http://w3school.com">W3 School</a>
+        
+        <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4
+            <!-- sotto Lista -->
+            <ul>
+                <li>bibite</li>
+            </ul>
+        </li>
+        </ul>
+        <h2>Tabelle</h2> 
+        
+        <table>
+        <caption>L'html nel tempo</caption>
+        <thead>
+        <tr>
+            <th>version</th>
+            <th>Anno</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td scope="col">HTML</td>
+            <td scope="col">1991</td>
+        
+        </tr>
+        <tr>
+            <td>HTML2.0</td>
+            <td>1995</td>
+        
+        </tr>
+        <tr>
+            <td>HTML3.2</td>
+            <td>1997</td>
+        
+        </tr>
+        <tr>
+            <td>HTML</td>
+            <td>1999</td>
+        
+        </tr>
+        <tr>
+            <td>HTML 5.0</td>
+            <td>2014</td>
+        
+        </tr>
+        <tr>
+            <td>HTML 5.0</td>
+            <td>2014</td>
+        
+        </tr>
+        </tbody>
+        </table>
+        
+        <h3>Tabelle con molte intestazioni</h3>
+        <table>
+        <caption>Grandi campioni</caption>
+        <tr>
+            <th>players</th>
+            <th>presenze</th>
+            <th>Goal</th>
+        </tr>
+         <tr>
+            <td scope="row">Messi</td>
+            <td>914</td>
+            <td>723</td>
+        </tr>
+         <tr>
+            <td scope="row">CR7</td>
+            <td>1023</td>
+            <td>748</td>
+        </tr>
+         <tr>
+            <td scope="row">Maradonna</td>
+            <td>520</td>
+            <td>723</td>
+        </tr>
+        </table>
+        
+        <!-- &lt;cologroup&gt; per avere <colgroupe> sul browser-->
+        
+        <h3>uso di<code> &lt;cologroup&gt;</code></h3>
+        
+        <table>
+        <caption>Spereori e loro aiutanti</caption>
+        <colgroup>
+        <col>
+        <col span="2" class="batman">
+        <col span="2" class="flash">
+        </colgroup>
+        <tr>
+            <th scope="col">batman</th>
+            <th scope="col">robin</th>
+            <th scope="col">flash</th>
+            <th scope="col">kid flash</th>
+        </tr>
+        <tr>
+            <td scope="row"></td>
+            <td>inteligenza</td>
+            <td>agillità</td>
+            <td>super velocita</td>
+            <td></td>
+        </tr>
+        </table>
+        
+        <!--per wrappare ctrl+shift+p + scrivere wrapp et il codice dove wrappare tipo <code>-->
+        <h3>>Uso degli attributi <code>rowspan</code> e <code>colspan</code></h3>
+        
+        <table>
+        <!--table>caption{articoli venduti nel 2013+tr*6>td*6{testo}-->
+        <caption>articoli venduti nel 2013</caption>
+        <tr>
+            <td rowspan="2" colspan="2"></td>
+        
+            <th colspan="2" scope="colgroup">vestiti</th>
+            <th colspan="2" scope="colgroup">accessori</th>
+        
+        </tr>
+        <tr>
+            <th scope="col">pantaloni</th>
+            <th scope="col">Gomme</th>
+            <th scope="col">Bracciali</th>
+            <th scope="col">Anelli</th>
+        </tr>
+        <tr>
+            <th rowspan="2" scope="rowgroup">Torino</th>
+            <th scope="row">roma</th>
+            <td>56</td>
+            <td>22</td>
+            <td>72</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <th scope="row">vittorio</th>
+            <td>46</td>
+            <td>18</td>
+            <td>61</td>
+            <td>15</td>
+        </tr>
+        <tr>
+            <th rowspan="2" scope="rowgroup">Milano</th>
+            <th scope="row">Duomo</th>
+            <td>89</td>
+            <td>34</td>
+            <td>85</td>
+            <td>38</td>
+        </tr>
+        <tr>
+            <th scope="row">Navigli</th>
+            <td>80</td>
+            <td>12</td>
+            <td>36</td>
+            <td>19</td>
+        </tr>
+        
+        </table>
+            <!-- Form -->
+        
+        <h2>Form di autenticazione</h2>
+        <form action="filename.java" method="post" enctype="multipart/form-data">
+            <fieldset>
+            <label for="user">User</label><br>
+            <input type="text" name="User" id="user" placeholder="inserisciuser"><br>
+            <label for="password">password</label><br>
+            <input type="password" name="password" id="password"><br>
+            <!--<input type="submit" value="login">-->
+            <button type="submit">login</button>
+        </fieldset>
+        </form>
+        
+        <!-- Form di registrazine-->
+        <h2>Form di registrazione</h2>
+        <p>I campi contrasegnati con * sono obbligatori</p>
+        
+        <!--flieldset per ragruppare tanti elementi per generi ed ha un tag di apertura e di chiusura -->
+        <!--legend per dare una legenda ad una parte del gruppo ha un tag di apertura e di chiusura-->
+        
+        <form action="handler.php" method="post"  enctype="multipart/form-data">
+        <label for="nome">Nome*</label><br>
+        <!--disabled per disattivare il compo del nome-->
+        <!--readonly value per leggere e non fare nient'altro-->
+            <input type="text" name="Nome" id="nome" value="Mario" disabled><br>
+        <label for="cognome">Cognome</label><br>
+            <input type="text" name="cognome" id="cognome" readonly value="Vecchione"><br>
+        
+        <!--input nascosto all'utente per nascondere i dati all'utenete -->
+            <input type="hidden" name="iduser" value="123">
+        
+        
+        
+        <label for="maschio"><input type="radio" name="genere" id="maschio" value="M">M</label>
+        <label for="femina"><input type="radio" name="genere" id="femina" value="F">F</label>
+        <label for="homo"><input type="radio" name="genere" id="homo" value="nb">homo</label><br>
+        <label for="birthday">Data di nascita</label><br>
+        <input type="date" name="birthday" id="birthday"><br>
+        
+        <!--input di tipo numerico-->
+        <label for="age">inserisci la tua età</label><br>
+        <input type="number" name="age" id="age" min="18" max="30"place><br>
+        
+        <label for="">Ora</label><br>
+        <input type="time" name="ora" id="ora"><br>
+        
+        <!--input per selezionare qualcosa o città-->
+        <label for="veicoli">veicoli</label>
+        <select name="veicoli" id="veicoli" multiple size="">
+        <option value="">scegli veicoli</option>
+        <optgroup label="fiat">
+            <option value="torino">punto</option><br>
+            <option value="Roma">panda</option><br>
+        </optgroup>
+        <optgroup label="BMW">
+            <option value="Milano">M3</option><br>
+            <option value="Venezia">X6</option><br>
+        </optgroup>
+        </select> <br>
+        <small>text in piccolo carrattere</small>
+        
+        <!--per selezionare veicoli-->
+        
+        <fieldset>
+        <legend>Liguaggi conosciuti</legend>
+        <!--per selezionare piu elementi-->
+        <label for="java"><input type="checkbox" name="java" id="java">Java</label>
+        
+        <!--input per avere un range da 0 a 100-->
+        <label for="level"></label>
+        <input type="range" name="" id="level"><br>
+        
+        <label for="php"><input type="checkbox" name="php" id="php">PHP</label><br>
+        <label for="pyton"><input type="checkbox" name="pyton" id="Pyton">Pyton</label><br>
+        
+        <!--per registrare un email-->
+        <label for="email">Indirizzo email</label><br>
+        <input type="email" name="email" id="email"><br>
+        
+        <!--per registare un sito-->
+        <label for="web">Sito web</label><br>
+        <input type="url" name="url" id="web"><br></optgroup>
+        
+        </fieldset>
+        <!--per allegare un pdf-->
+        <label for="cv">Cv in formato PDF</label><br>
+        
+        <!--accept/* per tutti i tipi di immagine o per specificare accept/jpeg..etc-->
+        <input type="file" name="cv" id="cv" accept="image/*" accept="application/pdf"><br>
+        <input type="reset" value="Reset">
+        
+        <button type="submit">Registrati</button><br>
+        
+        <label for="message"> lascia un messaggio</label><br>
+        <textarea name="submit" id="message" cols="30" rows="10"></textarea><br>
+        
+        
+        </form>
+        
+        <h2>Form di ricerca</h2>
+        <form action="">
+        <label for="cerca">inserisci il termine da cercare</label><br>
+        <input type="search" name="" id="cerca"><br>
+        <button type="submit">Cerca</button>
+        </form>
+        
+        <h3>Lorem ipsum dolor sit amet.</h3>
+        <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+</body>
+</html>
