@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/esercizio.css">
+    <title>La Storia della Musica Pop e Rap</title>
+
+    <!-- 
+        1) Collegate un foglio di stile esterno: chiamatelo style.css;  **
+        
+        2) Assegnate al div con class="container" una larghezza di 960px e centratelo nella pagina **
+        usate le proprietà width e margin;
+
+        3) Assegnate al <body> un font bastone (senza grazie) in modo che il primo font sia "Arial",
+        se no "Helvetica" ma comunque un font sans-serif usando la proprietà font-family;              **
+        assegnate un interlinea di 1.5 usando la proprietà line-height
+
+        4) Colorate le intestazioni che ci sono nella pagina (da <h1> a <h4>) con il colore #1877f2  **
+        usando la sintassi dei selettori raggruppati;
+
+        5) Assegnate alle <section> il padding seguente  **
+        1rem per il padding left e right
+
+        6) Assegnate alla classe="quote" (che intercetta i <blockquote>) un font con "grazie" in modo che il primo font sia "Times New Roman", **
+        se no "Times" ma comunque un font serif usando la proprietà font-family;
+
+        7) Assegnate all'elemento <cite> un font di 1rem **
+        
+        8) Assegnate alla sezione con id="rap-music" un bordo solo sul lato superiore (top) di "1px" di tipo "solid" e colore #cdc6c6; **
+
+        9) Assegnate al <p> immediatamente seguente all' <h2> primo figlio di <section> un font di 1.3rem;
+        dovete usare i combinatori (> +) per costruire il selettore e la pseudoclasse :nth-child() per intercettare solo il primo <h2>  **
+        
+        10) Eliminate il punto elenco dalla navigazione interna (indice) usando la proprietà "list-style-type"    **
+        eliminate il padding-left di default portandolo a 0;
+        usate la classe="index-bar" per intercettare la lista della navigazione interna
+
+        11) Eliminate la sottolineatura dai link della navigazione usando la proprietà "text-decoration"   **
+        e assegnate il colore #222      
+        usate la classe "nav-item"
+
+        12) Assegnate il colore #1877f2 ai link visitati della navigazione, usate la pseudo classe :visited  **
+
+        13) Aggiungete la sottolineatura ai link della navigazionesolo quando il mouse passa sopra al link, usate la pseudo classe :hover **
+
+        14) Eliminate dalle tabelle il gap(di default le celle sono separate) tra le celle usando la proprietà "border-collapse"
+
+        15) Assegnate al <caption> un margine superiore di 2rem e uno inferiore di 1 rem
+
+        16) Assegnate alle celle della tabella, sia <th> sia <td> un padding di 1rem e un bordo di 1px di tipo solido e di colore #ddd
+        
+        17) Assegnate il colore di background #eee alle sole righe del <tbody> e solo per le righe dispari, ricordatevi della pseudo classe nth-child()
+
+        18) Assegnate al <footer>
+            il colore #fff per il testo;
+            il colore di background #1877f2;
+
+           18bis)al paragrafo contenuto nel footer assegnate i margini a 0;
+            assegnate un padding di 1rem;
+
+        19) Colorate il link del footer con il colore #eee
+        
+     -->
+</head>
+
+<body>
+    <div class="container">
+
+
+        <main>
+            <article>
+                <header>
+                    <h1>Musica Pop e musica Rap</h1>
+                    <nav>
+                        <ul class="index-bar">
+                            <li><a class="nav-item" href="#intro-pop">Introduzione al Pop</a></li>
+                            <li><a class="nav-item" href="#root-pop">Le Radici del Pop</a></li>
+                            <li><a class="nav-item" href="#year-pop">Esplosione degli Anni '60</a></li>
+                            <li><a class="nav-item" href="#intro-rap">Introduzione al Rap</a></li>
+                            <li><a class="nav-item" href="#root-rap">Le Origini</a></li>
+                            <li><a class="nav-item" href="#year-rap-80">Boom degli Anni '80</a></li>
+                            <li><a class="nav-item" href="#year-rap-90">Mainstream negli Anni '90</a></li>
+                            <li><a class="nav-item" href="#global">Globalizzazione nel 2000</a></li>
+                            <li><a class="nav-item" href="#rap-key">Elementi Chiave del Rap</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <section id="pop-music">
+                    <h2 id="intro-pop">Introduzione al Pop</h2>
+                    <p>La musica pop, abbreviazione di "musica popolare", è un genere musicale che ha radici
+                        profonde
+                        nella
+                        cultura
+                        popolare.</p>
+                    <p>Nato nel XX secolo, il pop ha attraversato molte trasformazioni nel corso
+                        degli
+                        anni,
+                        influenzando
+                        e
+                        riflettendo le tendenze sociali e culturali del suo tempo.</p>
+                    <h2 id="root-pop">Le Radici del Pop</h2>
+                    <p>Il termine "pop" iniziò a guadagnare popolarità negli anni '50 per descrivere la musica
+                        leggera,
+                        melodica e accessibile che stava emergendo. Artisti come Elvis Presley e Chuck Berry
+                        contribuirono a definire il suono iniziale del pop, mescolando elementi di rhythm and
+                        blues,
+                        country e rock and roll.</p>
+                    <p>Questo periodo segna un importante momento di convergenza culturale, con la musica pop
+                        che si
+                        diffuse ampiamente tra il pubblico giovane. Le canzoni pop diventarono un riflesso della
+                        società
+                        del tempo, affrontando temi come l'amore, la ribellione giovanile e le speranze per il
+                        futuro.
+                        L'influenza del pop si estese rapidamente attraverso la radio, la televisione e
+                        l'industria
+                        musicale, diventando un fenomeno culturale di vasta portata.</p>
+                    <h2 id="year-pop">Esplosione degli Anni '60</h2>
+                    <p>Gli anni '60 videro l'esplosione del fenomeno pop con l'invasione britannica. Gruppi come
+                        i
+                        Beatles e i Rolling Stones divennero icone globali, portando la musica pop ad un
+                        pubblico
+                        più
+                        ampio. Le canzoni diventarono sempre più sofisticate e gli artisti sperimentarono con
+                        nuovi
+                        suoni e stili.</p>
+                    <h3>Diversificazione degli Anni '80</h3>
+                    <p>Negli anni '80, la musica pop si diversificò ulteriormente, incorporando elementi di
+                        dance,
+                        synth-pop
+                        e new
+                        wave.
+                        Artisti come Michael Jackson e Madonna divennero leggende del pop mondiale, portando la
+                        cultura
+                        visiva e la
+                        coreografia al centro della scena.</p>
+                    <h3>Il Pop Contemporaneo</h3>
+                    <p>Nel ventunesimo secolo, la musica pop ha continuato a evolversi con l'avvento della
+                        tecnologia e
+                        l'influenza della musica digitale. Artisti
+                        come Beyoncé, Taylor Swift e Ed Sheeran hanno dominato le classifiche mondiali,
+                        dimostrando
+                        la
+                        resilienza e la versatilità del genere.</p>
+                    <blockquote class="quote">La musica è l'arte di pensare con i suoni. <cite>Taylor
+                            Swift</cite></blockquote>
+                    <h3>Principali Elementi del Pop</h3>
+                    <ul>
+                        <li>Caratteristiche Musicali
+                            <ul>
+                                <li>Melodie orecchiabili e facili da ricordare.</li>
+                                <li>Testi spesso incentrati sull'amore, la gioventù e le esperienze quotidiane.
+                                </li>
+                                <li>Uso frequente di strumenti popolari come chitarra, pianoforte e batteria.
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Iconografia Visiva
+                            <ul>
+                                <li>Videoclip elaborati e coreografie accattivanti.</li>
+                                <li>Moda eccentrica e distintiva.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <table>
+                        <caption>Tabella delle Icone Pop</caption>
+                        <thead>
+                            <tr>
+                                <th>Artista</th>
+                                <th>Anni Attivi</th>
+                                <th>Contributo Chiave</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Elvis Presley</td>
+                                <td>1954-1977</td>
+                                <td>Pioniere del rock and roll e del pop</td>
+                            </tr>
+                            <tr>
+                                <td>Madonna</td>
+                                <td>1982-presente</td>
+                                <td>Regina del pop negli anni '80</td>
+                            </tr>
+                            <tr>
+                                <td>Michael Jackson</td>
+                                <td>1964-2009</td>
+                                <td>Re del pop, icona mondiale</td>
+                            </tr>
+                            <tr>
+                                <td>Beyoncé</td>
+                                <td>1997-presente</td>
+                                <td>Influente artista contemporanea</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+                <section id="rap-music">
+                    <h2 id="intro-rap">Introduzione al Rap</h2>
+                    <p>Il rap, genere musicale nato negli Stati Uniti alla fine degli anni '70, è diventato un
+                        elemento fondamentale della cultura hip-hop.</p>
+                    <p>Originariamente una forma di espressione
+                        nelle comunità urbane,
+                        il rap ha evoluto nel tempo diventando un fenomeno globale, influenzando la musica, la
+                        moda e la società.</p>
+                    <h2 id="root-rap">Le Origini</h2>
+                    <p>Il rap, genere musicale nato negli Stati Uniti alla fine degli anni '70, ha radici
+                        profonde nelle tradizioni orali africane e nei griot, poeti e musicisti che raccontavano
+                        storie
+                        attraverso il canto. Tuttavia, le origini del rap moderno possono essere tracciate
+                        all'interno delle
+                        comunità afroamericane e latinoamericane delle città statunitensi.</p>
+                    <p>Negli anni '70, il DJ Kool Herc, spesso considerato uno dei pionieri del rap, introdusse
+                        il
+                        concetto di break-beat nelle sue performance. Questo stile di esecuzione, in cui
+                        venivano
+                        isolati e estesi i ritornelli strumentali dei brani, fornì la base per l'emergere della
+                        cultura
+                        hip-hop e del rap. I primi rapper, noti anche come "MC" (Master of Ceremonies), si
+                        esibivano
+                        improvvisando versi ritmati su questi break-beat, dando vita a una nuova forma di
+                        espressione
+                        musicale e poetica.</p>
+                    <p>Il rap divenne presto uno strumento per esprimere le esperienze di vita nelle comunità
+                        urbane,
+                        affrontando temi come la povertà, la discriminazione e le sfide quotidiane. Questo stile
+                        di
+                        narrazione, insieme all'uso creativo del linguaggio e della metrica, ha contribuito a
+                        plasmare
+                        il rap come una forma d'arte unica e influente.</p>
+                    <h2 id="year-rap-80">Boom degli Anni '80</h2>
+                    <p>Gli anni '80 hanno visto l'emergere di icone del rap come Run-D.M.C., Grandmaster Flash e
+                        Public
+                        Enemy. Il rap si
+                        è diffuso nelle strade di New York City, diventando la voce delle comunità emarginate e
+                        affrontando
+                        temi sociali
+                        come la povertà, la violenza e le disuguaglianze.</p>
+                    <h2 id="year-rap-90">Mainstream negli Anni '90</h2>
+                    <p>Negli anni '90, il rap è entrato a pieno titolo nella mainstream culture con l'ascesa di
+                        artisti
+                        come
+                        Tupac
+                        Shakur e The Notorious B.I.G. L'era ha visto una grande varietà di stili, dal gangsta
+                        rap
+                        alla
+                        conscious
+                        hip-hop, contribuendo a rendere il genere sempre più diversificato.</p>
+                    <h2 id="global">Globalizzazione nel 2000</h2>
+                    <p>Con l'avvento del nuovo millennio, il rap ha raggiunto una diffusione globale. Artisti
+                        internazionali come Eminem, Kanye West e Jay-Z hanno contribuito a espandere la portata
+                        del
+                        genere, portando il rap in nuove direzioni e incorporando elementi di altri generi
+                        musicali.
+                    </p>
+                    <blockquote class="quote">La musica è come la magia. C'è un certo sentimento quando crei
+                        qualcosa dal
+                        nulla e
+                        lo
+                        condividi con il mondo. <cite>Eminem</cite></blockquote>
+                    <h2 id="rap-key">Elementi Chiave del Rap</h2>
+                    <h3>Rime e Versi</h3>
+                    <p>Il rap si distingue per la sua enfasi sulle rime e i versi. Gli artisti utilizzano spesso
+                        giochi
+                        di
+                        parole,
+                        metafore e storytelling per esprimere le proprie esperienze e opinioni.</p>
+                    <h3>Beatboxing e Campionamento</h3>
+                    <p>Il beatboxing, la creazione di ritmi vocali, e il campionamento, l'utilizzo di frammenti
+                        sonori
+                        da
+                        altre
+                        registrazioni, sono elementi chiave nella produzione musicale del rap.</p>
+                    <h3>Cultura Visiva</h3>
+                    <p>Il rap è fortemente associato a una cultura visiva distintiva, che include abbigliamento,
+                        graffiti, e
+                        videoclip
+                        elaborati.</p>
+                    <table>
+                        <caption>Tabella delle Icone del Rap</caption>
+                        <thead>
+                            <tr>
+                                <th>Artista</th>
+                                <th>Anni Attivi</th>
+                                <th>Contributo Chiave</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Run-D.M.C.</td>
+                                <td>1981-2002</td>
+                                <td>Pionieri del rap mainstream</td>
+                            </tr>
+                            <tr>
+                                <td>Tupac Shakur</td>
+                                <td>1990-1996</td>
+                                <td>Influente figura del rap della West Coast</td>
+                            </tr>
+                            <tr>
+                                <td>Eminem</td>
+                                <td>1996-presente</td>
+                                <td>Successo internazionale, vincitore di numerosi premi</td>
+                            </tr>
+                            <tr>
+                                <td>Nicki Minaj</td>
+                                <td>2004-presente</td>
+                                <td>Icona femminile del rap contemporaneo</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+        </main>
+
+        <footer>
+            <p>Testo creato con l'aiuto di Chat GPT di <a href="https://chat.openai.com/">open.ai</a></p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
