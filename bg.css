@@ -1,0 +1,59 @@
+/*@font-face{
+    font-family: "Open Sans";
+    src: url('../font/font/OpenSans/OpenSans-Regular.woff2'),
+    url('../font/font/OpenSans/OpenSans-Regular.ttf');
+}
+@font-face{
+    font-family: "Open Sans bold";
+    src: url('../font/font/OpenSans/OpenSans-Regular.woff2'),
+    url('../font/font/OpenSans/OpenSans-Regular.ttf');
+}
+
+b, strong{
+    font-family: "Open Sans bold";
+} */
+
+body{
+    /*font-family: Arial, Helvetica, "Helvetica Neue",sans-serif;
+    line-height: 1.47;
+    font-size: 1.25rem;
+    font-style: italic;
+    font-weight: bold;
+    font-variant: small-caps; */
+    font: 100%/1.47 "Open Sans", sans-serif;
+}
+
+p.text {
+margin: 1 rem;
+padding: 1 rem;
+border: 1px solid red;
+width: 400;
+/*background-color: lightblue;
+background-image: url('../Assets/wave-background.jpg');
+background-size: cover;  per avere l'imagine su tutta la scatola
+senza modificarne le dimenzioni. 
+**background position per la posizione dell'imagine
+**backgroung - repeat per ripetter o non l'imagine in background */
+/*background: 
+url('../Assets/emoji-angry-fill.png') no-repeat,
+url('../Assets/razzo-html.jpeg') center/50%  no-repeat lightblue;*/
+
+}
+
+ul{
+    list-style-type: square;
+    list-style-position: outside;
+    list-style-position: inside ;
+    list-style-image: url();
+}
+
+ul li::before{
+content: "";
+width: 16px;
+height: 16px;
+background-color: red;
+display: inline-block;
+margin-right: 8px;
+border-radius: 50%;
+
+}
